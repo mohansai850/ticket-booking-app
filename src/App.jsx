@@ -53,7 +53,7 @@ const App = () => {
 							index={index}
 							confirmPassenger={confirmPassenger}
 							clearPassanger={clearPassanger}
-							shouldShowRemovePassenger={!!(index && isLastElement)}
+							shouldShowRemovePassenger={index > 0 && isLastElement}
 							shouldShowAddPassenger={
 								passengerList.length !== MAX_PASSENGER_LIMIT && isLastElement
 							}
