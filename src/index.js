@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RouteError from './components/RouteError.jsx';
+import Home from './components/Home.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
 	{
 		path: '/',
+		element: <Home />,
+		errorElement: <RouteError />,
+	},
+	{
+		path: '/passengerDetails',
 		element: <App />,
 		errorElement: <RouteError />,
 	},
