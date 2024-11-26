@@ -1,7 +1,4 @@
-import axios from 'axios';
-import { useEffect } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
-import { GET_AIRPORTS_URL } from '../util/util';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
