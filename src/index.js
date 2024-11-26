@@ -25,6 +25,7 @@ const router = createBrowserRouter([
 	{
 		path: '/BookTicket',
 		element: <BookTicket />,
+		errorElement: <RouteError />,
 		loader,
 	},
 	{
